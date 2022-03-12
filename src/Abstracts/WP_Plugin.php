@@ -1,9 +1,9 @@
 <?php
-if (!defined('ABSPATH')) {
-    exit;
-}
+namespace WP_MyFans\Abstracts;
 
-class WP_MyFans
+use WP_MyFans\Interfaces\WP_PluginInterface;
+
+abstract class WP_Plugin implements WP_PluginInterface
 {
     public static function activatePlugin()
     {
