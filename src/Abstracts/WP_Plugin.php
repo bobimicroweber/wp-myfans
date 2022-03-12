@@ -5,6 +5,11 @@ use WP_MyFans\Interfaces\WP_PluginInterface;
 
 abstract class WP_Plugin implements WP_PluginInterface
 {
+    public function run()
+    {
+
+    }
+
     public static function activatePlugin()
     {
         return true;
@@ -19,4 +24,5 @@ abstract class WP_Plugin implements WP_PluginInterface
     {
         return true;
     }
+
 }

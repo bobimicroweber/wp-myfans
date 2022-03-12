@@ -20,3 +20,6 @@ register_deactivation_hook(__FILE__, array('WP_MyFans\\WP_MyFansPlugin', 'deacti
 register_uninstall_hook(__FILE__, array('WP_MyFans\\WP_MyFansPlugin', 'uninstallPlugin'));
 
 require_once plugin_dir_path(__FILE__) . "vendor/autoload.php";
+
+$plugin = new \WP_MyFans\WP_MyFansPlugin();
+$plugin->run();

@@ -7,6 +7,7 @@ class WP_MyFansPlugin extends WP_Plugin
 {
 
 
+
     
 
 }
