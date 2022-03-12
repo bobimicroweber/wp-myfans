@@ -47,7 +47,12 @@ class WP_MyFansPlugin extends WP_Plugin
             //'capability_type'   => 'post',
         //    'capabilities'      => ['post'],
             //'map_meta_cap'      => null,
-            'hierarchical'        => true,
+
+            'public'        => true,
+            'query_var'     => true,
+            'rewrite'       => array('slug' => 'myfans'),
+            'has_archive'   => true,
+            'hierarchical'  => false,
             'supports'            => ['title','editor','author','thumbnail','comments','revisions','page-attributes','post-formats'],
             'taxonomies'          => [],
             'has_archive'         => true,
