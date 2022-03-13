@@ -10,55 +10,50 @@ class WP_MyFansPlugin extends WP_Plugin
 
     public function run()
     {
-        $this->registerPostType();
-    }
 
-    function registerPostType()
-    {
-        register_post_type( 'wp-myfans', [
-            'label'  => null,
-            'labels' => [
-                'name'               => 'MyFans',
-                'menu_name'          => 'MyFans',
-                'all_items'          => __('All posts', 'wp-myfans'),
-                'singular_name'      => 'wp-myfans',
-                'add_new'            => __('Add new post', 'wp-myfans'),
-                'add_new_item'       => 'Add new item',
-                'edit_item'          => 'Edit post',
-                'new_item'           => 'New item',
-                'view_item'          => 'View Item',
-                'search_items'       => 'Search items',
-                'not_found'          => 'Not found',
-                'not_found_in_trash' => 'Not found in trash',
-                'parent_item_colon'  => '',
-            ],
-            'description'         => '',
-            'public'              => true,
-            'publicly_queryable'  => true,
-            // 'exclude_from_search' => null,
-             'show_ui'             => true,
-            // 'show_in_nav_menus'   => null,
-            'show_in_menu'        => true,
-            'show_in_admin_bar'   => true,
-            'show_in_rest'        => null,
-            'rest_base'           => null,
-            'menu_position'       => null,
-            'menu_icon'           => null,
-            //'capability_type'   => 'post',
-        //    'capabilities'      => ['post'],
-            //'map_meta_cap'      => null,
+        add_filter('the_content', function ($content) {
 
+            global $wp_query;
+
+            // Check if we're inside the main loop in a single Post.
+            if ( is_singular() && in_the_loop() && is_main_query() ) {
+                var_dump(get_post());
+            }
+
+            return $content;
+        }, 5);
+
+
+
+        $supports = array('title', 'editor', 'author', 'thumbnail', 'comments', 'revisions', 'page-attributes', 'post-formats');
+
+        $labels = array(
+            'name'          => _x('MyFans Posts', 'plural'),
+            'singular_name' => _x('Posts', 'singular'),
+            'menu_name'     => _x('MyFans', 'admin menu'),
+            'name_admin_bar'=> _x('Posts', 'admin bar'),
+            'add_new'       => _x('Add New', 'add new'),
+            'add_new_item'  => __('Add New Post'),
+            'new_item'      => __('New Post'),
+            'edit_item'     => __('Edit Post'),
+            'view_item'     => __('View Post'),
+            'all_items'     => __('All Posts'),
+            'search_items'  => __('Search Posts'),
+            'not_found'     => __('No Posts found.')
+        );
+
+        $args = array(
+            'supports'      => $supports,
+            'labels'        => $labels,
             'public'        => true,
             'query_var'     => true,
-            'rewrite'       => array('slug' => 'myfans'),
+            'rewrite'       => array('slug' => 'posts'),
+            // 'taxonomies'    => [],
             'has_archive'   => true,
-            'hierarchical'  => false,
-            'supports'            => ['title','editor','author','thumbnail','comments','revisions','page-attributes','post-formats'],
-            'taxonomies'          => [],
-            'has_archive'         => true,
-            'rewrite'             => false,
-            'query_var'           => true,
-        ] );
+            'hierarchical'  => false
+        );
+        $this->registerPostType('my-fans', $args);
+
     }
 
 

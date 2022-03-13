@@ -10,6 +10,13 @@ abstract class WP_Plugin implements WP_PluginInterface
 
     }
 
+    public function registerPostType($postType, $args = array() )
+    {
+        add_action('init', function () use ($postType, $args) {
+            register_post_type($postType, $args);
+        });
+    }
+
     public static function activatePlugin()
     {
         return true;
