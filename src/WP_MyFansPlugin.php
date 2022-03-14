@@ -12,14 +12,19 @@ class WP_MyFansPlugin extends WP_Plugin
 {
     public function run()
     {
-        // Filters
+        /*// Filters
         WP_MyFansContentFilter::register();
 
         // Post Types
         WP_MyFansPostType::register();
 
         // MetaBoxes
-        WP_MyFansMetaBox::register();
+        WP_MyFansMetaBox::register();*/
+
+        $listFiles = scandir(__DIR__);
+
+        dd($listFiles); 
+
     }
 
 }

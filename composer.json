@@ -18,6 +18,7 @@
     "email": "info@geckosystems.com"
   },
   "require": {
-    "geckosystems/wp-pluginframework": "^0.1.0"
+    "geckosystems/wp-pluginframework": "^0.1.0",
+    "symfony/var-dumper": "^5.4"
   }
 }
