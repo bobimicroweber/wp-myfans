@@ -13,6 +13,7 @@ abstract class WP_Plugin implements WP_PluginInterface
         $this->registerActivationHooks();
 
         // Autoload plugin files
+        $this->autoloadPath('Listeners');
         $this->autoloadPath('Filters');
         $this->autoloadPath('MetaBoxes');
         $this->autoloadPath('PostTypes');
