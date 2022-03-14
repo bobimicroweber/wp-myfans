@@ -14,7 +14,7 @@ class WP_MyFansContentFilter extends WP_Filter {
 
         // Check if we're inside the main loop in a single Post.
         if (is_singular() && in_the_loop() && is_main_query()) {
-            var_dump(get_post());
+          //  var_dump(get_post());
         }
 
         return $data;
