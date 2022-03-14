@@ -7,8 +7,8 @@ namespace Composer\Autoload;
 class ComposerStaticInitdb267449a4c90c1b1c1e8d3e0117cb96
 {
     public static $files = array (
-        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
     );
 
@@ -16,7 +16,6 @@ class ComposerStaticInitdb267449a4c90c1b1c1e8d3e0117cb96
         'W' => 
         array (
             'WP_PluginFramework\\' => 19,
-            'WP_MyFans\\' => 10,
         ),
         'S' => 
         array (
@@ -24,16 +23,16 @@ class ComposerStaticInitdb267449a4c90c1b1c1e8d3e0117cb96
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\VarDumper\\' => 28,
         ),
+        'M' => 
+        array (
+            'MyFans\\' => 7,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
         'WP_PluginFramework\\' => 
         array (
             0 => __DIR__ . '/..' . '/geckosystems/wp-pluginframework/src',
-        ),
-        'WP_MyFans\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
         ),
         'Symfony\\Polyfill\\Php80\\' => 
         array (
@@ -46,6 +45,10 @@ class ComposerStaticInitdb267449a4c90c1b1c1e8d3e0117cb96
         'Symfony\\Component\\VarDumper\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/var-dumper',
+        ),
+        'MyFans\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
         ),
     );
 

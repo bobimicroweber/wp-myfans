@@ -1,9 +1,9 @@
 <?php
-namespace WP_MyFans\Filters;
+namespace MyFans\Filters;
 
 use WP_PluginFramework\Listeners\WP_SavePostEvent;
 
-class WP_MyFansSavePostEvent extends WP_SavePostEvent
+class MyFansSavePostEvent extends WP_SavePostEvent
 {
     public static function event($post_id, $post) {
 

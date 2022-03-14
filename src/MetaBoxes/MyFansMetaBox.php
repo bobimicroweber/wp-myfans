@@ -1,13 +1,13 @@
 <?php
-namespace WP_MyFans\MetaBoxes;
+namespace MyFans\MetaBoxes;
 
 use WP_PluginFramework\MetaBoxes\WP_MetaBox;
 
-class WP_MyFansMetaBox extends WP_MetaBox {
+class MyFansMetaBox extends WP_MetaBox {
 
-    public static $id = 'wp-my-fans-post-metabox';
+    public static $id = 'my-fans-post-metabox';
     public static $title = 'Require Membership';
-    public static $postType = 'wp-myfans';
+    public static $postType = 'myfans';
 
     public static function html($data)
     {

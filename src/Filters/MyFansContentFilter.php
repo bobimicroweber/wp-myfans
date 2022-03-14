@@ -1,12 +1,10 @@
 <?php
 
-namespace WP_MyFans\Filters;
+namespace MyFans\Filters;
 
-use WP_PluginFramework\Filters\WP_Filter;
+use WP_PluginFramework\Filters\WP_ContentFilter;
 
-class WP_MyFansContentFilter extends WP_Filter {
-
-    public static $filter = 'the_content';
+class MyFansContentFilter extends WP_ContentFilter {
 
     public static function filter($data) {
 

@@ -9,7 +9,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "WP_MyFans\\": "src/"
+      "MyFans\\": "src/"
     }
   },
   "prefer-stable": true,
