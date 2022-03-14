@@ -6,5 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'WP_PluginFramework\\' => array($vendorDir . '/geckosystems/wp-pluginframework/src'),
     'WP_MyFans\\' => array($baseDir . '/src'),
 );

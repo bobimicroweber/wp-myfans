@@ -1,5 +1,5 @@
 <?php
-namespace WP_MyFans\Framework\PostTypes;
+namespace WP_PluginFramework\PostTypes;
 
 abstract class WP_PostType
 {

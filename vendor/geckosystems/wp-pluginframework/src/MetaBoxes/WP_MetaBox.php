@@ -1,5 +1,5 @@
 <?php
-namespace WP_MyFans\Framework\MetaBoxes;
+namespace WP_PluginFramework\MetaBoxes;
 
 abstract class WP_MetaBox
 {

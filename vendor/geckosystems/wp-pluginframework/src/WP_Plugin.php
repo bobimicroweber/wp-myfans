@@ -1,7 +1,7 @@
 <?php
-namespace WP_MyFans\Framework;
+namespace WP_PluginFramework;
 
-use WP_MyFans\Framework\Interfaces\WP_PluginInterface;
+use WP_PluginFramework\Interfaces\WP_PluginInterface;
 
 abstract class WP_Plugin implements WP_PluginInterface
 {

@@ -1,5 +1,45 @@
 {
-    "packages": [],
+    "packages": [
+        {
+            "name": "geckosystems/wp-pluginframework",
+            "version": "0.1",
+            "version_normalized": "0.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bobimicroweber/wp-pluginframework.git",
+                "reference": "90c97f4267fb57f82ff36c9d6d096503a50aecfc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bobimicroweber/wp-pluginframework/zipball/90c97f4267fb57f82ff36c9d6d096503a50aecfc",
+                "reference": "90c97f4267fb57f82ff36c9d6d096503a50aecfc",
+                "shasum": ""
+            },
+            "time": "2022-03-14T18:28:21+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "WP_PluginFramework\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Gecko Systems",
+                    "email": "info@geckosystems.com"
+                }
+            ],
+            "description": "WordPress Plugin Framework",
+            "homepage": "http://geckosystems.com",
+            "support": {
+                "email": "info@geckosystems.com",
+                "issues": "https://github.com/bobimicroweber/wp-pluginframework/issues",
+                "source": "https://github.com/bobimicroweber/wp-pluginframework/tree/0.1"
+            },
+            "install-path": "../geckosystems/wp-pluginframework"
+        }
+    ],
     "dev": true,
     "dev-package-names": []
 }

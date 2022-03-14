@@ -9,11 +9,16 @@ class ComposerStaticInitdb267449a4c90c1b1c1e8d3e0117cb96
     public static $prefixLengthsPsr4 = array (
         'W' => 
         array (
+            'WP_PluginFramework\\' => 19,
             'WP_MyFans\\' => 10,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'WP_PluginFramework\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/geckosystems/wp-pluginframework/src',
+        ),
         'WP_MyFans\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',

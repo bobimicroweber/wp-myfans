@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'bb41a06bb03586f1c15fd5dc195b537787cb29b8',
+    'reference' => '73a0d8ffa41368fe4aea42f9a9b4ef28db1c64be',
     'name' => 'geckosystems/wp-myfans',
   ),
   'versions' => 
@@ -18,7 +18,16 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'bb41a06bb03586f1c15fd5dc195b537787cb29b8',
+      'reference' => '73a0d8ffa41368fe4aea42f9a9b4ef28db1c64be',
+    ),
+    'geckosystems/wp-pluginframework' => 
+    array (
+      'pretty_version' => '0.1',
+      'version' => '0.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '90c97f4267fb57f82ff36c9d6d096503a50aecfc',
     ),
   ),
 );

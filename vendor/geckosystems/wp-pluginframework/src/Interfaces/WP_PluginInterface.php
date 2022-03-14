@@ -1,5 +1,5 @@
 <?php
-namespace WP_MyFans\Framework\Interfaces;
+namespace WP_PluginFramework\Interfaces;
 
 interface WP_PluginInterface
 {

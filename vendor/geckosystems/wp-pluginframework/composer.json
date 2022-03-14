@@ -1,6 +1,6 @@
 {
-  "name": "geckosystems/wp-myfans",
-  "description": "WordPress My Fans",
+  "name": "geckosystems/wp-pluginframework",
+  "description": "WordPress Plugin Framework",
   "authors": [
     {
       "name": "Gecko Systems",
@@ -9,15 +9,12 @@
   ],
   "autoload": {
     "psr-4": {
-      "WP_MyFans\\": "src/"
+      "WP_PluginFramework\\": "src/"
     }
   },
   "prefer-stable": true,
   "homepage": "http://geckosystems.com",
   "support": {
     "email": "info@geckosystems.com"
-  },
-  "require": {
-    "geckosystems/wp-pluginframework": "^0.1.0"
   }
 }

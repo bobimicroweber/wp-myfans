@@ -1,5 +1,5 @@
 <?php
-namespace WP_MyFans\Framework\Filters;
+namespace WP_PluginFramework\Filters;
 
 abstract class WP_Filter
 {
