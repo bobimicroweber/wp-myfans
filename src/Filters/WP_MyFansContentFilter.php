@@ -1,10 +1,13 @@
 <?php
 
-namespace WP_MyFans;
+namespace WP_MyFans\Filters;
 
-class WP_MyFansContentFilter {
+use WP_MyFans\Framework\Filters\WP_Filter;
 
-    public function apply() {
+class WP_MyFansContentFilter extends WP_Filter {
+
+    public static function register() {
+
         add_filter('the_content', function ($content) {
 
             global $wp_query;

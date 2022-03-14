@@ -1,16 +1,19 @@
 <?php
+namespace WP_MyFans\MetaBoxes;
 
-class WP_MyFansMetaBox {
+use WP_MyFans\Framework\MetaBoxes\WP_MetaBox;
 
-    public function register() {
+class WP_MyFansMetaBox extends WP_MetaBox {
+
+    public static function registerxx() {
 
 
-        $this->addMetaBox('wpMyFansPostMeta', __('Require Membership'), function () {
+       /* $this->addMetaBox('wpMyFansPostMeta', __('Require Membership'), function () {
 
             echo 'dadada';
 
 
-        }, $this->postType, 'side', 'high');
+        }, $this->postType, 'side', 'high');*/
     }
 
     public function addMetaBox($id, $title, $callback, $screen = null, $context = 'advanced', $priority = 'default', $callback_args = null)
