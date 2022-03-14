@@ -54,6 +54,12 @@ class WP_MyFansPlugin extends WP_Plugin
         );
         $this->registerPostType('my-fans', $args);
 
+
+
+        add_action( "add_meta_boxes", function () {
+            add_meta_box("newsletter_main_post",
+                esc_html("Add article", "newsletter"), array($this, "add_article_html"), "newsletter", 'advanced');
+        });
     }
 
 
