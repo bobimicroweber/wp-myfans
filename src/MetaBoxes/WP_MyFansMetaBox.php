@@ -1,7 +1,7 @@
 <?php
 namespace WP_MyFans\MetaBoxes;
 
-use WP_MyFans\Framework\MetaBoxes\WP_MetaBox;
+use WP_PluginFramework\MetaBoxes\WP_MetaBox;
 
 class WP_MyFansMetaBox extends WP_MetaBox {
 

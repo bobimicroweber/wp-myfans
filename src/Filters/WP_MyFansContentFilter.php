@@ -2,7 +2,7 @@
 
 namespace WP_MyFans\Filters;
 
-use WP_MyFans\Framework\Filters\WP_Filter;
+use WP_PluginFramework\Filters\WP_Filter;
 
 class WP_MyFansContentFilter extends WP_Filter {
 

@@ -1,7 +1,7 @@
 <?php
 namespace WP_MyFans\PostTypes;
 
-use WP_MyFans\Framework\PostTypes\WP_PostType;
+use WP_PluginFramework\PostTypes\WP_PostType;
 
 class WP_MyFansPostType extends WP_PostType
 {

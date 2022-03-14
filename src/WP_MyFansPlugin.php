@@ -2,7 +2,7 @@
 
 namespace WP_MyFans;
 
-use WP_MyFans\Framework\WP_Plugin;
+use WP_PluginFramework\WP_Plugin;
 
 use WP_MyFans\Filters\WP_MyFansContentFilter;
 use WP_MyFans\PostTypes\WP_MyFansPostType;
