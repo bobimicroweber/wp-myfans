@@ -18,4 +18,15 @@ trait WP_PluginActivationTrait
     {
         return true;
     }
+
+    public function registerActivationHooks() {
+
+        $pluginClassWithNamespace = get_class($this);
+
+        register_activation_hook(__FILE__, array($pluginClassWithNamespace, 'activatePlugin'));
+        register_deactivation_hook(__FILE__, array($pluginClassWithNamespace, 'deactivatePlugin'));
+        register_uninstall_hook(__FILE__, array($pluginClassWithNamespace, 'uninstallPlugin'));
+
+    }
 }
+

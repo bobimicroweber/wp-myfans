@@ -9,6 +9,10 @@ abstract class WP_Plugin implements WP_PluginInterface
 
     public function run()
     {
+        // Register activation hooks
+        $this->registerActivationHooks();
+
+        // Autoload plugin files
         $this->autoloadPath('Filters');
         $this->autoloadPath('MetaBoxes');
         $this->autoloadPath('PostTypes');
