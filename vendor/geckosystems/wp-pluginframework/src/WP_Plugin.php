@@ -8,6 +8,13 @@ abstract class WP_Plugin implements WP_PluginInterface
     use WP_PluginAutoloadTrait;
     use WP_PluginActivationTrait;
 
+    public $autoloadPaths = [
+      'Listeners',
+      'Filters',
+      'MetaBoxes',
+      'PostTypes',
+    ];
+
     public function run()
     {
         // Register activation hooks
