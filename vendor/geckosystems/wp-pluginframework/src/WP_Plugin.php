@@ -9,6 +9,7 @@ abstract class WP_Plugin implements WP_PluginInterface
     use WP_PluginActivationTrait;
 
     public $autoloadPaths = [
+      'Menus',
       'Listeners',
       'Filters',
       'MetaBoxes',
