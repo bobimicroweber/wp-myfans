@@ -32,26 +32,6 @@ class MyFansAdminMenu
             array(static::class, 'submenu_page_callback')
         );
 
-        add_submenu_page(
-            'myfans',
-            'Submenu title',
-            'Submenu title',
-            'manage_options',
-            'myfans-submenu',
-            array(static::class, 'submenu_page_callback')
-        );
-
-        add_submenu_page(
-            'edit.php?post_type=myfans', //$parent_slug
-            'Tutorial Subpage Example',  //$page_title
-            'Tutorial Settings',        //$menu_title
-            'manage_options',           //$capability
-            'tutorial_subpage_example',//$menu_slug
-            function () {
-                echo 1;
-            }//$function
-        );
-
     }
 
     /**
