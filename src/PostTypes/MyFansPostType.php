@@ -10,7 +10,7 @@ class MyFansPostType extends WP_PostType
     public static $postType = 'myfans';
     public static $postLabelMenuName = 'MyFans';
     public static $postLabelName = 'Posts';
-    public static $postLabelSingularName = 'Post';
+    public static $postLabelSingularName = 'MyFans Post';
 
     public static $supports = array(
         'title',

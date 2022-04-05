@@ -18,19 +18,29 @@ class MyFansAdminMenu
         add_menu_page(
             'My Fans',
             'My Fans',
-            'manage_options',
+            'read',
             'myfans', array(static::class, 'fawfawfawfwa'),
             'dashicons-unlock'
         );
 
         add_submenu_page(
             'myfans',
+            'Posts',
+            'Posts',
+            'read',
+            'edit.php?post_type=myfans',
+
+        );
+
+        add_submenu_page(
+            'myfans',
             'Submenu title',
             'Submenu title',
-            'manage_options',
+            'read',
             'myfans-submenu',
             array(static::class, 'submenu_page_callback')
         );
+
 
     }
 

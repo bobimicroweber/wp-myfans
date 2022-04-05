@@ -21,7 +21,7 @@ abstract class WP_PostType
         );
 
         $args = array(
-            'show_in_menu'=>false,
+            'show_in_menu'  =>	true,
             'supports' => static::$supports,
             'labels' => $labels,
             'public' => true,
